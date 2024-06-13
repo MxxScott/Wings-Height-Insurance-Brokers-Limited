@@ -99,6 +99,7 @@
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     bottom: 0rem;
+    text-shadow: 2px 2px 2px black;
 }
 
 .cont {
@@ -126,4 +127,34 @@
 
 .spacing {
     min-height: 80%;
+}
+
+#daud{
+    background-image: url("bgimg/dauid.jpg");
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+}
+
+#baba{
+    background-image: url("bgimg/alex.jpeg");
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+}
+
+#alex{
+    background-image: url("bgimg/baba.jpg");
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
 }

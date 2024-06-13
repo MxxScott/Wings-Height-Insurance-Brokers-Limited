@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="quote_docs/style_quote.css">
+    <link rel="stylesheet" href="bookings_docs/style_bookings.css">
     <link rel="stylesheet" href="public/style.css">
 </head>
 
@@ -33,18 +33,69 @@
             </div>
         </nav>
     </header>
+    <main>
+        <div class="formcontainer">
+            <span class="heading">Bookings</span>
+            <span class="text">Please take a moment to fill out the form. Our communication team would respond to you as
+                soon as possible. Thank you.</span>
+
+            <div class="input">
+                <label for="first" class="text">First Name:</label>
+                <input type="text" id="first" class="normaltext" placeholder="Enter Your First Name...">
+            </div>
+            <div class="input">
+                <label for="last" class="text">Last Name:</label>
+                <input type="text" id="last" class="normaltext" placeholder="Enter Your Last Name...">
+            </div>
+            <div class="input">
+                <label for="mail" class="text">Email Address:</label>
+                <input type="text" id="mail" class="normaltext" placeholder="Enter Your Email Address...">
+            </div>
+            <div class="input">
+                <label for="datetime" class="text">Select Date and Time:</label>
+                <input type="datetime-local" class="date_time" id="datetime">
+            </div>
+            <div class="input">
+                <label for="booking-type" class="text">Select Booking Type:</label>
+                <select id="booking-type">
+                    <option value="">Select an option</option>
+                    <option value="1-on-1 insurance consultation">1-on-1 insurance consultation</option>
+                    <option value="Vehicle Insurance consultation">Vehicle Insurance consultation</option>
+                    <option value="Life Insurance Review">Life Insurance Review</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="message" class="text">Leave Us A Message:</label>
+                <input type="text" id="message" class="messagetext" placeholder="Enter Your Message...">
+            </div>
+            <div class="input" id="submitcontainer">
+                <button class="submitbtn" id="submit_button">Submit</button>
+            </div>
+        </div>
+    </main>
     <footer>
         <span class="boxhead">Wing-Heights Insurance Brokers Limited</span>
         <span class="boxtext">wingheightslimited@gmail.com</span>
         <span class="boxtext">©2024 by Lawal David, Micheal, Toba, Ebelechukwu Lawrence, Hamid</span>
     </footer>
 </body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init({
+            publicKey: "W1p1Z90l6h0UfGB5G",
+        });
+    })();
+</script>
 <script>
     window.embeddedChatbotConfig = {
         chatbotId: "qS-n7p1elDzSZ7TF4RpPa",
         domain: "www.chatbase.co"
     }
 </script>
-<script src="https://www.chatbase.co/embed.min.js" chatbotId="qS-n7p1elDzSZ7TF4RpPa" domain="www.chatbase.co" defer></script>
+<script src="https://www.chatbase.co/embed.min.js" chatbotId="qS-n7p1elDzSZ7TF4RpPa" domain="www.chatbase.co"
+    defer></script>
 <script src="bookings_docs/script_bookings.js" type="text/javascript"></script>
+
 </html>
