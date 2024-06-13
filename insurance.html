@@ -54,7 +54,7 @@
                 <br>
                 Let Wing-Heights be your trusted advisor, helping you secure the right auto insurance that protects
                 you and your investment.</span>
-            <button class="claimbtn" id="auto-quotebtn">Get an Auto Insurance Quote</button>
+            <button class="claimbtn" id="auto-claimbtn">File an Auto Insurance Claim</button>
         </div>
         <div class="first">
             <img src="media/images/homeowners-insurance.jpg" alt="Homeowners Insurance">
@@ -76,7 +76,7 @@
                 <br>
                 Let Wing-Heights help you secure the right homeowners insurance to protect your investment and your
                 peace of mind.</span>
-            <button class="claimbtn" id="homeowners-quotebtn">Get a Homeowners Insurance Quote</button>
+            <button class="claimbtn" id="homeowners-claimbtn">File a Homeowners Insurance Claim</button>
         </div>
         <div class="first">
             <img src="media/images/health-insurance.jpg" alt="Health Insurance">
@@ -98,7 +98,7 @@
                 <br>
                 Let Wing-Heights help you gain clarity and confidence in choosing the right health insurance for
                 you and your family.</span>
-            <button class="claimbtn" id="health-quotebtn">Get a Health Insurance Quote</button>
+            <button class="claimbtn" id="health-claimbtn">File a Health Insurance Claim</button>
         </div>
         <div class="first">
             <img src="media/images/life-insurance.jpg" alt="Life Insurance">
@@ -120,7 +120,7 @@
                 <br>
                 Let Wing-Heights be your guide to finding the right life insurance solution to secure your family's
                 future.</span>
-            <button class="claimbtn" id="life-quotebtn">Get a Life Insurance Quote</button>
+            <button class="claimbtn" id="life-claimbtn">File a Life Insurance Claim</button>
         </div>
         <div class="first">
             <img src="media/images/disability-insurance.jpg" alt="Disability Insurance">
@@ -142,7 +142,7 @@
                 <br>
                 Let Wing-Heights help you secure the disability insurance you need to protect your income and peace
                 of mind.</span>
-            <button class="claimbtn" id="disability-quotebtn">Get a Disability Insurance Quote</button>
+            <button class="claimbtn" id="disability-claimbtn">File a Disability Insurance Claim</button>
         </div>
         <div class="first">
             <img src="media/images/renters-insurance.jpg" alt="Renters Insurance">
@@ -164,7 +164,7 @@
                 <br>
                 Let Wing-Heights help you secure the right renters insurance to protect your belongings and
                 financial security.</span>
-            <button class="claimbtn" id="renters-quotebtn">Get a Renters Insurance Quote</button>
+            <button class="claimbtn" id="renters-claimbtn">File a Renters Insurance Claim</button>
         </div>
         <div class="first">
             <img src="media/images/business-insurance.jpg" alt="Business Insurance">
@@ -185,7 +185,7 @@
                 <br>
                 Let Wing-Heights help you create a comprehensive business insurance plan that provides the
                 protection you need to thrive.</span>
-            <button class="claimbtn" id="business-quotebtn">Get a Business Insurance Quote</button>
+            <button class="claimbtn" id="business-claimbtn">File a Business Insurance Claim</button>
         </div>
         <div class="first">
             <img src="media/images/travel-insurance.jpg" alt="Travel Insurance">
@@ -207,7 +207,7 @@
                 <br>
                 Let Wing-Heights help you travel with confidence knowing you're protected from unexpected
                 challenges.</span>
-            <button class="claimbtn" id="travel-quotebtn">Get a Travel Insurance Quote</button>
+            <button class="claimbtn" id="travel-claimbtn">File a Travel Insurance Claim</button>
         </div>
         <div class="first">
             <img src="media/images/pet-insurance.jpg" alt="Pet Insurance">
@@ -229,7 +229,7 @@
                 <br>
                 Let Wing-Heights help you give your furry friends the best possible care with the right pet
                 insurance.</span>
-            <button class="claimbtn" id="pet-quotebtn">Get a Pet Insurance Quote</button>
+            <button class="claimbtn" id="pet-claimbtn">File a Pet Insurance Claim</button>
         </div>
         <div class="first">
             <img src="media/images/other-insurance.jpg" alt="Other Insurances">
@@ -237,7 +237,7 @@
             <span class="text">Beyond these core insurance types, we offer a wide range of specialized insurance
                 solutions to meet your specific needs. Whether you need insurance for your boat, your motorcycle,
                 or your valuable possessions, we'll help you find the right coverage.</span>
-            <button class="claimbtn" id="other-quotebtn">Get a Quote for Other Insurance Types</button>
+            <button class="claimbtn" id="claimbtn">File a Claim for Other Insurance Types</button>
         </div>
     </main>
     <footer>
@@ -246,7 +246,6 @@
         <span class="boxtext">©2024 by Lawal David, Micheal, Toba, Ebelechukwu Lawrence, Hamid</span>
     </footer>
 </body>
-<script src="public/script.js" type="text/javascript"></script>
 <script>
     window.embeddedChatbotConfig = {
         chatbotId: "qS-n7p1elDzSZ7TF4RpPa",
@@ -254,5 +253,15 @@
     }
 </script>
 <script src="https://www.chatbase.co/embed.min.js" chatbotId="qS-n7p1elDzSZ7TF4RpPa" domain="www.chatbase.co" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "X0dbe0YErSlAmJwnB",
+            });
+        })();
+</script>
 <script src="insurance_docs/script_insurance.js" type="text/javascript"></script>
+
 </html>

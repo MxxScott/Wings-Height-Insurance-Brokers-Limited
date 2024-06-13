@@ -1,4 +1,5 @@
 const submitbtn = document.getElementById(`submit_button`);
+
 function sendMail() {
     var params = {
       first: document.getElementById("first").value,
@@ -27,3 +28,11 @@ function sendMail() {
   submitbtn.addEventListener('click', function() {
     sendMail();
   });
+console.log(window.selectedInsuranceType);
+
+const insuranceTypeSelect = document.getElementById("insurance-type");
+
+// Get the URL parameter
+const urlParams = new URLSearchParams(window.location.search);
+const selectedType = urlParams.get('type');
+insuranceTypeSelect.value = selectedType;
