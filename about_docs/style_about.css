@@ -10,6 +10,11 @@
     padding-bottom: 3rem;
 }
 
+.first > .text{
+    width: 80%;
+    line-height: 1.5;
+}
+
 .benefits{
     max-width: 100%;
     align-items: center;
@@ -18,10 +23,6 @@
     flex-direction: column;
 }
 
-.first > .text{
-    width: 80%;
-    line-height: 1.5;
-}
 .benefits > .text{
     width: 60%;
 }

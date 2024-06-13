@@ -33,13 +33,63 @@
             </div>
         </nav>
     </header>
+    <main>
+        <div class="first">
+            <span class="heading">Filing Claims</span>
+            <span class="text">The most stressful part for most clients is making valid claims. Here at Wing-Heights insurance brokers, we give you 100% assistance on how to make valid claims. Also, we follow up on your claims and do our best to make sure you claims are paid in the fastest possible time in full amounts.</span>
+        </div>
+        <div class="formcontainer">
+            <span class="heading">File a Claim</span>
+            <span class="text">Please take a moment to fill out the form. Our communication team would respond to you as soon as possible. Thank you.</span>
+
+            <div class="input">
+                <label for="first" class="text">First Name:</label>
+                <input type="text" id="first" class="normaltext" placeholder="Enter Your First Name...">
+            </div>
+            <div class="input">
+                <label for="last" class="text">Last Name:</label>
+                <input type="text" id="last" class="normaltext" placeholder="Enter Your Last Name...">
+            </div>
+            <div class="input">
+                <label for="phone" class="text">Phone Number:</label>
+                <input type="text" id="phone" class="normaltext" placeholder="Enter Phone Number...">
+            </div>
+            <div class="input">
+                <label for="mail" class="text">Email Address:</label>
+                <input type="text" id="mail" class="normaltext" placeholder="Enter Your Email Address...">
+            </div>
+            <div class="input">
+                <label for="insurance-type" class="text">Select Insurance Type:</label>
+                <select id="insurance-type" >
+                  <option value="">Select an option</option>
+                  <option value="Auto Insurance">Auto Insurance</option>
+                  <option value="Homeowners Insurance">Homeowners Insurance</option>
+                  <option value="Health Insurance">Health Insurance</option>
+                  <option value="Life Insurance">Life Insurance</option>
+                  <option value="Disability Insurance">Disability Insurance</option>
+                  <option value="Renters Insurance">Renters Insurance</option>
+                  <option value="Business Insurance">Business Insurance</option>
+                  <option value="Travel Insurance">Travel Insurance</option>
+                  <option value="Pet Insurance">Pet Insurance</option>
+                  <option value="Other">Other(Specify in the message section)</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="message" class="text">Leave Us A Message:</label>
+                <input type="text" id="message" class="messagetext" placeholder="Enter Your Message...">
+            </div>
+            <div class="input" id="submitcontainer">
+                <button class="submitbtn" id="submit_button">Submit</button>
+            </div>
+        </div>
+    </main>
     <footer>
         <span class="boxhead">Wing-Heights Insurance Brokers Limited</span>
         <span class="boxtext">wingheightslimited@gmail.com</span>
         <span class="boxtext">©2024 by Lawal David, Micheal, Toba, Ebelechukwu Lawrence, Hamid</span>
     </footer>
 </body>
-<script src="public/script.js" type="text/js"></script>
+<script src="public/script.js" type="text/javascript"></script>
 <script>
     window.embeddedChatbotConfig = {
         chatbotId: "qS-n7p1elDzSZ7TF4RpPa",
@@ -47,6 +97,15 @@
     }
 </script>
 <script src="https://www.chatbase.co/embed.min.js" chatbotId="qS-n7p1elDzSZ7TF4RpPa" domain="www.chatbase.co" defer></script>
-<script src="claim_docs/script_claim.js" type="text/js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "X0dbe0YErSlAmJwnB",
+            });
+        })();
+</script>
+<script src="claim_docs/script_claim.js" type="text/javascript"></script>
 
 </html>

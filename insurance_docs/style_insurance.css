@@ -1,0 +1,34 @@
+.first{
+    max-width: 100%;
+    align-items: center;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.first > .text{
+    line-height: 1.5;
+    width: 80%;
+}
+
+.claimbtn{
+    background-color: #2B308C;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0.5rem;
+    font-size: large;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+.claimbtn:hover{
+    scale: 1.1;
+    transition: 0.2s ease-in;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.first img{
+    border-radius: 2rem;
+}

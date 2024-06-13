@@ -8,6 +8,7 @@ function sendMail() {
       message: document.getElementById("message").value,
     };
     
+    params.name = `${params.first} ${params.last}`;
     const serviceID = "service_a4ax49i";
     const templateID = "template_vtf4b5q";
   
