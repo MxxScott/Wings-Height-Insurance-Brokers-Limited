@@ -128,3 +128,17 @@ nav{
     font-weight: bolder;
     width: 100%;
 }
+
+footer{
+    padding: 2rem;
+    background-color: #FEF7F2;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer > span{
+    color: #2B308C;
+    margin-bottom: 1rem;
+}
