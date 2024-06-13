@@ -1,0 +1,258 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEF7F2;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.homeinit{
+    height: calc(100dvh - 8px);
+}
+
+body header {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Add this line */
+    width: 100%;
+    position: relative;
+}
+
+.navlist ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering of links */
+    justify-content: space-evenly;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    align-items: center; /* Add this line */ 
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2dvh;
+}
+
+.navlist ul li a {
+    text-decoration: none;
+    color: #2B308C;
+    font-size: large;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo img {
+    width: auto;
+    height: 20dvh;
+    margin-right: 5rem;
+}
+
+.logo{
+    text-align: center;
+}
+
+.navlist{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    height: 31.6rem;
+}
+
+.lefttext{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    margin-left: 7dvw;
+}
+
+.mainimg {
+    position: absolute;
+    width: auto;
+    z-index: -1;
+    right: 3dvw;
+}
+
+.mainimg img{
+    height: 35rem;
+}
+
+.lefttext .up{
+    font-size: 4rem;
+    font-weight: 900;
+    color: #2B308C;
+    margin-bottom: 3dvh;
+}
+
+.lefttext .down{
+    color: #2B308C;
+    font-size: large;
+    font-weight: 800;
+}
+
+.between{
+    background-color: white;
+    max-width: 100%;
+    border-spacing: 5rem;
+    padding: 5rem;
+}
+
+.why{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.why_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #2B308C;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 3rem;
+}
+
+.head_main{
+    font-size: xx-large;
+    font-weight: 900;
+    margin: 0.5rem;
+}
+
+.head_sub{
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.navlist ul li:hover {
+    border-bottom: 2px solid #c3986b;
+  }
+
+
+.boxes {
+    /* Set display, gap, flex-wrap, justify-content for menu items */
+    display: flex; /* Enable flexbox layout */
+    gap: 30px; /* Add spacing between menu items */
+    flex-wrap: wrap; /* Wrap items to multiple rows if needed */
+    justify-content: space-evenly; /* Center menu items horizontally */
+}
+
+/* Menu Item Styling */
+.reas {
+    /* Set background color, border radius, box shadow, padding, text alignment, width, max-width, height, display, flex-direction, align-items, justify-content for menu items */
+    background-color: #DDC7BB; 
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    padding: 30px; /* Internal spacing */
+    width: 10rem; /* Fixed width, but can shrink to 45% if necessary */
+    height: 11rem; /* Fixed height */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    text-align: left;
+}
+
+.iconcont{
+    background-color: #FBF5F1;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    scale: 2;
+    width: fit-content;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: #4F3527;
+}
+
+.reas > span{
+    margin-top: 1rem;
+    color: #4F3527;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.boxtext{
+    font-weight: 500;
+    font-size: small;
+}
+
+.boxhead{
+    font-weight: 700;
+    font-size: large;
+}
+
+.box:hover{
+    transform: scale(1.1); /* Add this line */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out; /* Add this line */
+  }
+
+.InforYou{
+    margin-top: 4rem;
+}
+
+.box{
+        /* Set background color, border radius, box shadow, padding, text alignment, width, max-width, height, display, flex-direction, align-items, justify-content for menu items */
+        background-color: #DDC7BB; 
+        border-radius: 1rem; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+        width: 18rem; /* Fixed width, but can shrink to 45% if necessary */
+        height: 30rem; /* Fixed height */
+        display: flex; /* Enable flexbox layout */
+        flex-direction: column; /* Arrange items vertically */
+        text-align: left;
+}
+
+.cont > span{
+    margin-top: 0.5rem;
+    color: #4F3527;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#dialogue{
+    max-width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.cont{
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contbox{
+    border-bottom: 1px solid #4F3527;
+}
+
+footer{
+    padding: 2rem;
+    background-color: #FEF7F2;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer > span{
+    color: #2B308C;
+    margin-bottom: 1rem;
+}
