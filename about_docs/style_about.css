@@ -1,7 +1,16 @@
-.first{
+.box{
+    background-image: url("bgimg/dialogue.jpg");
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+}
+.first {
     max-width: 100%;
     align-items: center;
-    text-align:center;
+    text-align: center;
     display: flex;
     flex-direction: column;
     padding-left: 7rem;
@@ -10,19 +19,111 @@
     padding-bottom: 3rem;
 }
 
-.first > .text{
+.first>.text {
     width: 80%;
     line-height: 1.5;
 }
 
-.benefits{
+.benefits {
     max-width: 100%;
     align-items: center;
-    text-align:center;
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.benefits > .text{
+.benefits>.text {
     width: 60%;
+}
+
+.back {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 3rem;
+}
+
+.back>.text {
+    line-height: 1.5;
+}
+
+.boxes {
+    /* Set display, gap, flex-wrap, justify-content for menu items */
+    display: flex;
+    /* Enable flexbox layout */
+    gap: 20px;
+    /* Add spacing between menu items */
+    flex-wrap: wrap;
+    /* Wrap items to multiple rows if needed */
+    justify-content: space-evenly;
+    /* Center menu items horizontally */
+}
+
+.boxtext {
+    font-weight: 500;
+    font-size: small;
+}
+
+.boxhead {
+    font-weight: 700;
+    font-size: large;
+}
+
+
+.box {
+    /* Set background color, border radius, box shadow, padding, text alignment, width, max-width, height, display, flex-direction, align-items, justify-content for menu items */
+    background-color: #DDC7BB;
+    border-radius: 1rem;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* Subtle shadow */
+    width: 23rem;
+    /* Fixed width, but can shrink to 45% if necessary */
+    height: 30rem;
+    /* Fixed height */
+    display: flex;
+    /* Enable flexbox layout */
+    flex-direction: column;
+    /* Arrange items vertically */
+    text-align: center;
+    vertical-align: bottom;
+
+}
+
+.cont>span {
+    margin-top: 0.5rem;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    bottom: 0rem;
+}
+
+.cont {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contbox {
+    border-bottom: 1px solid #4F3527;
+}
+
+.InforYou {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.spacing {
+    min-height: 80%;
 }
