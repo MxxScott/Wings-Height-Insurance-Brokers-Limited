@@ -2,15 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wing-Heights Insurance Brokers - About Us</title>
-    <link rel="stylesheet" href="about_docs/style_about.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link id="page_favicon" href="media/images/favicon.png" rel="icon" type="image/x-icon">
-    <link rel="stylesheet" href="public/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="page_favicon" href="media/images/favicon.png" rel="icon" type="image/x-icon">
+  <title>Wing-Heights Insurance Brokers - About Us</title>
+  <link rel="stylesheet" href="about_docs/style_about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/style.css">
+  <script>
+    const video = document.getElementById('video');
+
+    // Play the video on page load, or when it's visible in the viewport
+    function playVideo() {
+      if (video.paused) {
+        video.play();
+        console.log('Video is playing');
+      }
+    }
+
+    // Trigger playVideo() when the video is in the viewport
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        playVideo();
+      }
+    });
+    observer.observe(video);
+
+    // Optionally, play on load:
+    // window.onload = playVideo; 
+  </script>
 </head>
 
 <body>
@@ -46,7 +68,7 @@
                 knowing you have the right coverage for your needs.</span>
         </div>
         <div class="videocont">
-            <video id="video" autoplay loop>
+            <video id="video" loading="lazy" autoplay loop >
                 <source src="media/videos/back_vid.mp4" type="video/mp4">
             </video>
         </div>

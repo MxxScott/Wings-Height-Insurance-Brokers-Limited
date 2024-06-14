@@ -13,6 +13,19 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link id="page_favicon" href="media/images/favicon.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="public/style.css">
+    <link rel="preload" href="media/videos/back_vid.mp4" as="video" />
+    <script>
+        // Preload the video using fetch
+        fetch('media/videos/back_vid.mp4')
+            .then(response => {
+                // You can store the video blob (if needed) or just let it preload
+                // This won't store the video on the user's computer
+                console.log('Video preloaded!');
+            })
+            .catch(error => {
+                console.error('Error preloading video:', error);
+            });
+    </script>
 </head>
 
 <body>
@@ -110,7 +123,8 @@
     <footer>
         <span class="boxhead">Wing-Heights Insurance Brokers Limited</span>
         <span class="boxtext">wingheightslimited@gmail.com</span>
-        <span class="boxtext">©2024 by Lawal David, Michael Ayiku Boateng, Oluwatoba Alade, Ebelechukwu Lawrence, Hamid Lasisi</span>
+        <span class="boxtext">©2024 by Lawal David, Michael Ayiku Boateng, Oluwatoba Alade, Ebelechukwu Lawrence, Hamid
+            Lasisi</span>
     </footer>
 </body>
 <script>
@@ -119,7 +133,8 @@
         domain: "www.chatbase.co"
     }
 </script>
-<script src="https://www.chatbase.co/embed.min.js" chatbotId="qS-n7p1elDzSZ7TF4RpPa" domain="www.chatbase.co" defer></script>
+<script src="https://www.chatbase.co/embed.min.js" chatbotId="qS-n7p1elDzSZ7TF4RpPa" domain="www.chatbase.co"
+    defer></script>
 <script src="index_docs/script_index.js" type="text/javascript"></script>
 
 </html>
