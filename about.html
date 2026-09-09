@@ -2,37 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link id="page_favicon" href="media/images/favicon.png" rel="icon" type="image/x-icon">
-  <title>Wing-Heights Insurance Brokers - About Us</title>
-  <link rel="stylesheet" href="about_docs/style_about.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="public/style.css">
-  <script>
-    const video = document.getElementById('video');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wing-Heights Insurance Brokers - About Us</title>
+    <link rel="stylesheet" href="about_docs/style_about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link id="page_favicon" href="media/images/favicon.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="public/style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById('video');
+            if (!video) return;
 
-    // Play the video on page load, or when it's visible in the viewport
-    function playVideo() {
-      if (video.paused) {
-        video.play();
-        console.log('Video is playing');
-      }
-    }
+            function playVideo() {
+                if (video.paused) {
+                    video.play().catch(error => console.log('Autoplay prevented:', error));
+                }
+            }
 
-    // Trigger playVideo() when the video is in the viewport
-    const observer = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting) {
-        playVideo();
-      }
-    });
-    observer.observe(video);
-
-    // Optionally, play on load:
-    // window.onload = playVideo; 
-  </script>
+            const observer = new IntersectionObserver(entries => {
+                if (entries[0].isIntersecting) {
+                    playVideo();
+                }
+            });
+            observer.observe(video);
+        });
+    </script>
 </head>
 
 <body>
@@ -40,12 +38,12 @@
         <nav>
             <div class="nav-wrapper">
                 <div class="logo">
-                    <img src="media/images/logo.png" alt="">
+                    <img src="media/images/logo.png" alt="Wing-Heights Logo">
                 </div>
                 <div class="navlist">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="" style="color: #C3986B; border-bottom: #C3986B 2px solid;">About Us</a></li>
+                        <li><a href="about.html" class="nav-active">About Us</a></li>
                         <li><a href="insurance.html">Insurance For You</a></li>
                         <li><a href="quote.html">Get a Quote</a></li>
                         <li><a href="claim.html">File a Claim</a></li>
@@ -55,67 +53,72 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="first">
-            <span class="heading">
-                Why insure through Wing-Heights insurance broker?</span>
-            <span class="text">Wing-heights insurance brokers limited is an invaluable company when it comes to finding
-                the right coverage for your needs. A broker has the experience and expertise to understand the different
-                insurance products on the market and to recommend the best policy for you. They can tailor coverage to
-                your specific needs and help you save money by providing you with the most cost-effective solutions.
-                Insurance brokers are also well-versed in the complexities of insurance law, ensuring that the policy
-                you purchase is legally valid and compliant. With an insurance broker, you can have peace of mind
-                knowing you have the right coverage for your needs.</span>
-        </div>
-        <div class="videocont">
-            <video id="video" loading="lazy" autoplay loop >
+
+    <main class="about-main">
+        <section class="first">
+            <span class="heading">Why Insure Through Wing-Heights?</span>
+            <span class="text">Wing-Heights Insurance Brokers Limited is an invaluable partner when it comes to finding
+                the right coverage for your lifestyle. Our experienced team understands the complex insurance market
+                inside and out, helping you pinpoint the best policies, tailor coverages, and secure cost-effective
+                options. From regulatory compliance to claim validity, we provide absolute peace of mind.</span>
+        </section>
+
+        <section class="videocont">
+            <video id="video" loading="lazy" autoplay muted loop playsinline>
                 <source src="media/videos/back_vid.mp4" type="video/mp4">
             </video>
-        </div>
-        <div class="benefits">
-            <span class="heading">
-                Benefits of working with wing-heights
-            </span>
-            <span class="left text">
-                1. <b>Choice and Options:</b> wing-heights insurance brokers work with multiple insurance companies,
-                which
-                means we can offer you a wide range of insurance options from different insurers. This allows you to
-                compare policies, coverage, and premiums to find the best fit for your requirements and budget.
-            </span>
-            <span class="left text">
-                2. <b>Time-Saving:</b> Searching for insurance on your own can be time-consuming, especially when
-                dealing
-                with multiple insurers and policies. Wing-Heigths insurance brokers can handle the legwork for you,
-                saving you time and effort in the process.
-            </span>
-            <span class="left text">
-                3. <b>Claims Assistance:</b> If you need to file an insurance claim, a broker can act as an intermediary
-                between you and the insurance company. Wing-Heigths insurance brokers can help navigate the claims
-                process, ensuring you get fair treatment and a prompt resolution.
-            </span>
-            <span class="left text">
-                4. <b>Transparency and Impartiality:</b> We insurance brokers are transparent about our fees and
-                commissions. We are legally bound to act in your best interest and offer impartial advice since we
-                don't represent any particular insurance company.
-            </span>
-            <span class="left text">
-                5. <b>Free of charge:</b> We don't charge any extra fee for any of services. The same premium you pay
-                every
-                year would remain the same or might even reduce.
-            </span>
-        </div>
-        <div class="back">
-            <span class="heading">The Background</span>
-            <span class="text">Wing-Heights insurance Brokers is an insurnace brokerage firm which was established in
-                2019 by Mr. Baba Ahmed. The sole purpose of this company is to create a stress free process of getting
-                insurance and making insurance claims. </span>
-            <span class="text">The core values for Wing-Heights Isurance brokerage is Transparency and .... We are very
-                commited to our clients and our priority is giving our clients the best possibe friendly service.
-            </span>
-        </div>
-        <div class="InforYou">
+        </section>
+
+        <section class="benefits">
+            <span class="heading">Benefits of Working With Us</span>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-num">01</span>
+                    <span class="benefit-title">Choice and Options</span>
+                    <span class="benefit-desc">We work with multiple major insurers, offering a wide range of options to
+                        compare policies, coverages, and premiums.</span>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-num">02</span>
+                    <span class="benefit-title">Time-Saving</span>
+                    <span class="benefit-desc">We handle all the legwork, heavy research, and comparison processes so
+                        you don't have to waste time.</span>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-num">03</span>
+                    <span class="benefit-title">Claims Assistance</span>
+                    <span class="benefit-desc">We act as your dedicated intermediary with insurance providers to ensure
+                        fair treatment and swift resolutions.</span>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-num">04</span>
+                    <span class="benefit-title">Transparency & Impartiality</span>
+                    <span class="benefit-desc">Completely unbiased guidance legally bound to act in your best interest
+                        with clear fee structures.</span>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-num">05</span>
+                    <span class="benefit-title">Free of Charge</span>
+                    <span class="benefit-desc">Enjoy world-class brokerage and advisory services at zero extra cost to
+                        your annual policy premium.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="back">
+            <span class="heading">Our Background</span>
+            <span class="text">Wing-Heights Insurance Brokers was established in 2019 by Mr. Baba Ahmed with a clear
+                mandate: to eliminate the friction, confusion, and stress traditionally associated with purchasing
+                insurance and filing claims.</span>
+            <span class="text">Our foundational core values are built entirely on transparency and absolute client
+                commitment. Your wellbeing and satisfaction will always remain our primary compass.</span>
+        </section>
+
+        <section class="InforYou">
             <span class="heading">Meet The Team</span>
-        </div>
+            <span class="head_sub">The leadership guiding your insurance journey</span>
+        </section>
+
         <div class="boxes">
             <div class="box" id="alex">
                 <div class="cont">
@@ -139,22 +142,26 @@
                 </div>
             </div>
         </div>
-
     </main>
+
     <footer>
-        <span class="boxhead">Wing-Heights Insurance Brokers Limited</span>
-        <span class="boxtext">wingheightslimited@gmail.com</span>
-        <span class="boxtext">©2024 by Lawal David, Michael Ayiku Boateng, Oluwatoba Alade, Ebelechukwu Lawrence, Hamid Lasisi</span>
+        <div class="footer-content">
+            <span class="boxhead">Wing-Heights Insurance Brokers Limited</span>
+            <span class="boxtext">wingheightslimited@gmail.com</span>
+            <span class="boxtext copyright">©2026 by Lawal David, Michael Ayiku Boateng, Oluwatoba Alade, Ebelechukwu
+                Lawrence, Hamid Lasisi</span>
+        </div>
     </footer>
+
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "qS-n7p1elDzSZ7TF4RpPa",
+            domain: "www.chatbase.co"
+        }
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="qS-n7p1elDzSZ7TF4RpPa" domain="www.chatbase.co"
+        defer></script>
+    <script src="about_docs/script_about.js" type="text/javascript"></script>
 </body>
-<script>
-    window.embeddedChatbotConfig = {
-        chatbotId: "qS-n7p1elDzSZ7TF4RpPa",
-        domain: "www.chatbase.co"
-    }
-</script>
-<script src="https://www.chatbase.co/embed.min.js" chatbotId="qS-n7p1elDzSZ7TF4RpPa" domain="www.chatbase.co"
-    defer></script>
-<script src="about_docs/script_about.js" type="text/javascript"></script>
 
 </html>

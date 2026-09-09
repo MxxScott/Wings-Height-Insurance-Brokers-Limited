@@ -8,23 +8,16 @@
     <link rel="stylesheet" href="index_docs/style_index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- import icons from google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link id="page_favicon" href="media/images/favicon.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="public/style.css">
     <link rel="preload" href="media/videos/back_vid.mp4" as="video" />
     <script>
-        // Preload the video using fetch
         fetch('media/videos/back_vid.mp4')
-            .then(response => {
-                // You can store the video blob (if needed) or just let it preload
-                // This won't store the video on the user's computer
-                console.log('Video preloaded!');
-            })
-            .catch(error => {
-                console.error('Error preloading video:', error);
-            });
+            .then(() => console.log('Video preloaded!'))
+            .catch(error => console.error('Error preloading video:', error));
     </script>
 </head>
 
@@ -34,12 +27,12 @@
             <nav>
                 <div class="nav-wrapper">
                     <div class="logo">
-                        <img src="media/images/logo.png" alt="">
+                        <img src="media/images/logo.png" alt="Wing-Heights Logo">
                     </div>
                     <div class="navlist">
                         <ul>
-                            <li><a href="" style="color: #C3986B; border-bottom: 2px solid #c3986b;">Home</a></li>
-                            <li><a href="about.html" class="active_a">About Us</a></li>
+                            <li><a href="index.html" class="nav-active">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
                             <li><a href="insurance.html">Insurance For You</a></li>
                             <li><a href="quote.html">Get a Quote</a></li>
                             <li><a href="claim.html">File a Claim</a></li>
@@ -49,92 +42,117 @@
                 </div>
             </nav>
         </header>
-        <div class="main">
-            <div class="lefttext">
-                <span class="up">Your Insurance <br>Partner for <br>Life</span>
-                <span class="down">We're here to guide you every step of the <br>way, from initial consultation to
-                    claims <br>handling.</span>
+
+        <main class="hero-section">
+            <div class="main">
+                <div class="lefttext">
+                    <span class="up">Your Insurance<br>Partner for Life</span>
+                    <span class="down">We're here to guide you every step of the way, from initial consultation to
+                        seamless claims handling.</span>
+                    <div class="hero-cta">
+                        <a href="quote.html" class="btn-primary">Get a Quote</a>
+                        <a href="bookings.html" class="btn-secondary">Book Consultation</a>
+                    </div>
+                </div>
+                <div class="mainimg">
+                    <img src="media/images/main.png" alt="Insurance Partner Illustration">
+                </div>
             </div>
-            <div class="mainimg">
-                <img src="media/images/main.png" alt="">
-            </div>
-        </div>
+        </main>
     </div>
-    <div class="between">
+
+    <section class="between">
         <div class="why">
             <div class="why_head">
                 <span class="head_main">Why Choose Us</span>
-                <span class="head_sub">Beyond Insurance</span>
-                <span class="head_sub">We're Committed to Your Wellbeing</span>
+                <span class="head_sub">Beyond Insurance • Committed to Your Wellbeing</span>
             </div>
             <div class="boxes">
                 <div class="reas">
-                    <div class="iconcont"><i class="material-icons large-icon">schedule</i></div>
+                    <div class="iconcont"><i class="material-icons">schedule</i></div>
                     <span class="boxhead">Time Saving</span>
-                    <span class="boxtext">We can handle the legwork for you, saving you time and effort in
-                        the process.</span>
+                    <span class="boxtext">We handle the heavy legwork for you, saving you valuable time and effort at
+                        every turn.</span>
                 </div>
                 <div class="reas">
                     <div class="iconcont"><i class="material-icons">balance</i></div>
                     <span class="boxhead">Impartiality</span>
-                    <span class="boxtext">We
-                        offer impartial advice since we don't
-                        represent any insurance company</span>
+                    <span class="boxtext">We provide completely unbiased advice since we work for you, not any specific
+                        insurer.</span>
                 </div>
                 <div class="reas">
                     <div class="iconcont"><i class="material-icons">payments</i></div>
-                    <span class="boxhead">Free of charge</span>
-                    <span class="boxtext">We don't charge any extra fee for any of services.</span>
+                    <span class="boxhead">Free of Charge</span>
+                    <span class="boxtext">Enjoy expert brokerage and advisory services completely free of any extra
+                        fees.</span>
                 </div>
             </div>
         </div>
+
         <div class="InforYou">
             <div class="why_head">
                 <span class="head_main">Our Services</span>
+                <span class="head_sub">Tailored consultation sessions designed for your peace of mind</span>
             </div>
             <div class="boxes">
                 <div class="box" id="1on1">
-                    <img src="media/images/dialogue.jpg" alt="1-on-1" id="dialogue">
+                    <div class="img-container">
+                        <img src="media/images/dialogue.jpg" alt="1-on-1 consultation" class="service-img">
+                    </div>
                     <div class="cont">
                         <span class="boxhead contbox">1-on-1 insurance consultation</span>
-                        <span class="boxtext">1hr</span>
-                        <span class="boxtext">Free Session</span>
+                        <div class="service-meta">
+                            <span class="boxtext">⏱ 1hr duration</span>
+                            <span class="boxtext price-tag">Free Session</span>
+                        </div>
                     </div>
                 </div>
                 <div class="box" id="vic">
-                    <img src="media/images/vehinsure.jpg" alt="Vehicle" id="dialogue">
+                    <div class="img-container">
+                        <img src="media/images/vehinsure.jpg" alt="Vehicle Insurance consultation" class="service-img">
+                    </div>
                     <div class="cont">
                         <span class="boxhead contbox">Vehicle Insurance consultation</span>
-                        <span class="boxtext">1hr</span>
-                        <span class="boxtext">Free Session</span>
+                        <div class="service-meta">
+                            <span class="boxtext">⏱ 1hr duration</span>
+                            <span class="boxtext price-tag">Free Session</span>
+                        </div>
                     </div>
                 </div>
                 <div class="box" id="lir">
-                    <img src="media/images/lifeins.jpg" alt="Life Insurance Review" id="dialogue">
+                    <div class="img-container">
+                        <img src="media/images/lifeins.jpg" alt="Life Insurance Review" class="service-img">
+                    </div>
                     <div class="cont">
                         <span class="boxhead contbox">Life Insurance Review</span>
-                        <span class="boxtext">1hr</span>
-                        <span class="boxtext">Free Session</span>
+                        <div class="service-meta">
+                            <span class="boxtext">⏱ 1hr duration</span>
+                            <span class="boxtext price-tag">Free Session</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
     <footer>
-        <span class="boxhead">Wing-Heights Insurance Brokers Limited</span>
-        <span class="boxtext">wingheightslimited@gmail.com</span>
-        <span class="boxtext">©2024 by Lawal David, Michael Ayiku Boateng, Oluwatoba Alade, Ebelechukwu Lawrence, Hamid
-            Lasisi</span>
+        <div class="footer-content">
+            <span class="boxhead">Wing-Heights Insurance Brokers Limited</span>
+            <span class="boxtext">wingheightslimited@gmail.com</span>
+            <span class="boxtext copyright">©2026 by Lawal David, Michael Ayiku Boateng, Oluwatoba Alade, Ebelechukwu
+                Lawrence, Hamid Lasisi</span>
+        </div>
     </footer>
+
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "qS-n7p1elDzSZ7TF4RpPa",
+            domain: "www.chatbase.co"
+        }
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="qS-n7p1elDzSZ7TF4RpPa" domain="www.chatbase.co"
+        defer></script>
+    <script src="index_docs/script_index.js" type="text/javascript"></script>
 </body>
-<script>
-    window.embeddedChatbotConfig = {
-        chatbotId: "qS-n7p1elDzSZ7TF4RpPa",
-        domain: "www.chatbase.co"
-    }
-</script>
-<script src="https://www.chatbase.co/embed.min.js" chatbotId="qS-n7p1elDzSZ7TF4RpPa" domain="www.chatbase.co"
-    defer></script>
-<script src="index_docs/script_index.js" type="text/javascript"></script>
 
 </html>

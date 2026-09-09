@@ -1,160 +1,243 @@
-.box{
-    background-image: url("bgimg/dialogue.jpg");
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-}
-.first {
-    max-width: 100%;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding-left: 7rem;
-    padding-right: 7rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+:root {
+    --primary-color: #2B308C;
+    --accent-color: #C3986B;
+    --bg-card: #F9F6F0;
+    --text-dark: #333333;
+    --text-muted: #555555;
 }
 
-.first>.text {
-    width: 80%;
-    line-height: 1.5;
+.about-main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.nav-active {
+    color: var(--accent-color) !important;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.first,
+.back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.heading {
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    font-weight: 900;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.first>.text,
+.back>.text {
+    width: 100%;
+    max-width: 800px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.videocont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.videocont video {
+    width: 100%;
+    max-height: 35rem;
+    border-radius: 1.25rem;
+    object-fit: cover;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .benefits {
-    max-width: 100%;
-    align-items: center;
-    text-align: center;
     display: flex;
     flex-direction: column;
-}
-
-.benefits>.text {
-    width: 60%;
-}
-
-.back {
-    max-width: 100%;
     align-items: center;
-    text-align: center;
+    padding: 5rem 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.benefit-card {
+    background-color: var(--bg-card);
+    border-radius: 1.25rem;
+    padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
-    padding-left: 7rem;
-    padding-right: 7rem;
-    padding-top: 3rem;
+    border: 1px solid rgba(195, 152, 107, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
 }
 
-.back>.text {
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-num {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.benefit-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.benefit-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
     line-height: 1.5;
 }
 
-.boxes {
-    /* Set display, gap, flex-wrap, justify-content for menu items */
+.InforYou {
     display: flex;
-    /* Enable flexbox layout */
-    gap: 20px;
-    /* Add spacing between menu items */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.head_sub {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.boxes {
+    display: flex;
+    gap: 2rem;
     flex-wrap: wrap;
-    /* Wrap items to multiple rows if needed */
-    justify-content: space-evenly;
-    /* Center menu items horizontally */
+    justify-content: center;
+    padding-bottom: 6rem;
 }
-
-.boxtext {
-    font-weight: 500;
-    font-size: small;
-}
-
-.boxhead {
-    font-weight: 700;
-    font-size: large;
-}
-
 
 .box {
-    /* Set background color, border radius, box shadow, padding, text alignment, width, max-width, height, display, flex-direction, align-items, justify-content for menu items */
-    background-color: #DDC7BB;
-    border-radius: 1rem;
-    /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    /* Subtle shadow */
-    width: 23rem;
-    /* Fixed width, but can shrink to 45% if necessary */
-    height: 30rem;
-    /* Fixed height */
+    border-radius: 1.25rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 360px;
+    height: 32rem;
     display: flex;
-    /* Enable flexbox layout */
     flex-direction: column;
-    /* Arrange items vertically */
     text-align: center;
-    vertical-align: bottom;
-
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(195, 152, 107, 0.2);
 }
 
-.cont>span {
-    margin-top: 0.5rem;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    bottom: 0rem;
-    text-shadow: 2px 2px 2px black;
+.box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 .cont {
-    max-height: 100%;
-    max-width: 100%;
-    padding: 0.8rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     height: 100%;
+    background: linear-gradient(to top, rgba(43, 48, 140, 0.85) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%);
+    justify-content: flex-end;
+}
+
+.cont>span {
+    margin-top: 0.4rem;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.boxhead {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.boxtext {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .contbox {
-    border-bottom: 1px solid #4F3527;
-}
-
-.InforYou {
-    max-width: 100%;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 0.5rem;
 }
 
 .spacing {
-    min-height: 80%;
+    min-height: 55%;
 }
 
-#daud{
+#daud {
     background-image: url("bgimg/dauid.jpg");
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
 }
 
-#baba{
+#baba {
     background-image: url("bgimg/alex.jpeg");
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
 }
 
-#alex{
+#alex {
     background-image: url("bgimg/baba.jpg");
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+footer .boxhead {
+    font-size: 1.35rem;
+    color: white;
+}
+
+footer .boxtext {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+}
+
+footer .copyright {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 968px) {
+    .navlist ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+    }
+
+    .navlist a {
+        font-size: 0.85rem;
+    }
 }
